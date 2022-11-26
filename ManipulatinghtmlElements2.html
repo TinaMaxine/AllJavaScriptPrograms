@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p class="one">Hello</p>
+    <p class="one">Welcome to</p>
+    <p class ="three">MySpace</p> -->
+    <ol>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+    </ol>
+    <script>
+        // var ax=document.getElementsByTagName("p")
+        // var bx=document.getElementsByClassName("heading")
+        // var bx=document.getElementById("two")
+        // var cx=document.getElementById("three")
+        // ax.style.color="blue"
+        // bx.style.color="yellow"
+        // cx.style.color="red"
+    //     ax[0].style.background="blue"
+    //     ax[1].style.background="yellow"
+    //     ax[ax.length-1].style.background="red"
+    //     for (var i in ax) {
+    //     ax[i].style.fontStyle = "italic";
+    //   }
+      var day=document.querySelectorAll("ol li")
+      document.write("selected elements:"+day.length+"<br>")
+      for(var i of day){
+        document.write(i.innerHTML+"<hr>")
+      }
+    </script>
+    
+</body>
+</html>

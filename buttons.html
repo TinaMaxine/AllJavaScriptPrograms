@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="click">This a dummy text</h2>
+    <button onclick="f1()">button1</button>
+    <button onclick="f2()">button2</button>
+    <script>
+        function f1(){
+            var ax=document.querySelectorAll("h2")
+            ax[0].style.color="red"
+            ax[0].style.fontSize="40px"
+            ax[0].style.fontWeight="90p"
+            ax[0].style.fontStyle="italic"
+        }
+        function f2(){
+            var ax=document.querySelectorAll("h2")
+            ax[0].style.color="blue"
+            ax[0].style.fontSize="40px"
+            ax[0].style.fontWeight="16vpm"
+            ax[0].style.fontStyle="italic"
+        }
+    </script>
+</body>
+</html>

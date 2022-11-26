@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student={
+            name:"Shakul",
+            age:35,
+            email:"xyz@gmail.com",
+            result:function(){
+                console.log("the result:- "+this.name+" of age "+this.age+" has secured first divison")
+            }
+        }
+        console.log(student.name)
+        console.log(student.email)
+        student.result()
+    </script>
+</body>
+</html>
+
+
+<!-- var student={
+    name:'shakul',
+    age:35,
+    email:"xyz@gmail.com",
+    result:function(){
+        console.log("the result:- "+this.name+"of age"+this.age+"has secured first division")
+    }
+
+}
+console.log(student.name)
+console.log(student.email)
+student.result()
+student.name="shakul malik"
+console.log(student.name)
+delete student.email
+console.log(student.email)
+student.results="first"
+console.log(student) -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DOM -->
+</head>
+<body>
+<h1 id="one" class="heading">Hello people</h1>
+<p id="two" class="heading">Hello world</p>
+    
+    <script>
+        // alert(document.documentElement.getAttribute("lang"));
+        // alert(document.head.firstElementChild.nodeName)
+        // alert(document.head.firstElementChild.nodeType)
+        // alert(document.head.lastElementChild.nodeName)
+        // alert(document.head.lastElementChild.nodeType)
+        // alert(document.body)
+        var ax=document.getElementById("one")
+        var bx=document.getElementsByClassName("heading")
+        ax.style.color="red"
+        bx[0].style.background="blue"
+        bx[(bx.length)-1].style.background="yellow"
+    </script>
+</body>

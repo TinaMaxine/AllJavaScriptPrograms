@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing</title>
+</head>
+<body>
+    <script>
+        function guess()
+        {
+            var randomNum=Math.floor(Math.random()*10)+1;
+            let guessCount=0;
+            // var youNum=parseInt(prompt("Guess a number from 1 to 10")); 
+                while(guessCount<5)
+                {
+                    var youNum=parseInt(prompt("Guess a number from 1 to 10")); 
+
+                if(youNum==randomNum){
+                    guessCount++;
+                    alert("Congrats! You did it in "+guessCount+" guess(es)");
+                    break
+                }
+                else if(youNum>randomNum){
+                    guessCount++;
+                    alert("Incorrect! Try a smaller number. You have "+(5-guessCount)+" tries left");
+                    youNum=parseInt(prompt("Guess a number from 1 to 10"));
+                }
+                else{
+                    guessCount++;
+                    alert("Incorrect! Try a greater number. You have "+(5-guessCount)+" tries left");
+                    youNum=parseInt(prompt("Guess a number from 1 to 10"));
+                }
+            }
+            if(guessCount>=5){
+                alert("The number is "+randomNum+". Better luck next time!")
+            }
+                
+            }
+        guess();
+    </script>
+</body>
+</html>

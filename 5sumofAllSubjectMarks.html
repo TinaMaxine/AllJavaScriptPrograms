@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(id, name, eng, sci, math) {
+
+this.id = id;
+
+this.name = name;
+
+this.eng = eng;
+
+this.sci = sci;
+
+this.math = math;
+
+
+this.result = function () {
+
+    return this.eng + this.sci + this.math;
+
+}
+
+}
+var student1 = new Student(101, "Amit", 25, 23, 24);
+
+console.log(student1.result());
+// var student1 = new Student();
+
+// console.log(student1.result());
+    </script>
+</body>
+</html>
