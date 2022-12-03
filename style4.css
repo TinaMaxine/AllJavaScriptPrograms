@@ -1,0 +1,24 @@
+.element {
+    /* justify-content: center; */
+    transform: translateX(200px);
+    animation: fadeOut 5s infinite;
+    }
+    .element>h3{
+        width: 300px;
+        height: 200px;
+    }
+    /* .element:hover {
+    opacity: 0;
+    animation: fadeIn 2s;
+    } */
+    @keyframes fadeOut {
+    /* from { 
+    transform: translateX(200px);
+    } */
+    to { 
+        transform: translateX(-100px);  }
+    }
+    /* @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    } */
