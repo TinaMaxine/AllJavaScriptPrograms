@@ -4,14 +4,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.hero{
-    /* display:block; */
+body{
+    display: flex;
     align-items: center;
     justify-content: center;
-    width:auto;
-    height:100vh;
+    height: 100vh;
     background-color: #252839;
-    /* min-height: calc(100vh - 90vh); */
 }
 .wrapper{
     display: inline-flex;
@@ -58,17 +56,17 @@
 
     }
 }
-/* .hero{
-        position: relative; 
+.hero{
+        position: relative;
         width: 100%;
         height: 100vh;
-        background:white;
-        background-color: white; 
+        /* background:white; */
+        /* background-color: white;  */
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% auto;
     
-    } */
+    }
 nav{
     display: flex;
     width:84%;
@@ -177,7 +175,7 @@ nav ul li a:hover{
         transform: translateX(0px);
     }
     50%{
-        transform: translateX(50px);
+        transform: translateX(100px);
     }
     0%{
         transform: translateX(0px);
@@ -187,32 +185,3 @@ nav ul li a:hover{
     background: linear-gradient(to right,#ff1361,#00fee9);
     font-size: large;
 }
-.checkout{
-    background: none;
-    font-size: 20px;
-    color: #00fee9;
-    text-align: center;
-}
-.flex-container{
-    background-color:#252839;
-    position: relative;
-    /* top:70px; */
-    min-height: 100vh;
-    display: flex;
-}
-.flex-container > div {
-    margin: 10px;
-    padding: 20px;
-    /* font-size: 30px; */
-    position: relative;
-    top:85px;
-    display: flex;
-    min-height: 100vh;
-    flex-flow: row nowrap;
-    background-color: #8792ce;
-  }
-  /* header, footer {
-    background: yellowgreen;
-    height: 15vh;
-  } */
-
